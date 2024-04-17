@@ -109,12 +109,13 @@ export default class Form extends React.Component{
       }
     clearData=()=>{
       this.setState({
-        rows :[]
+        rows :[],
+        names:[]
       })
       
     }
     render(){
-      console.log("table data",this.state.data);
+    //ToDo: Styles should import from   
         return(<div>
           <div style={{"margin":"2%"}}>
           <label>
